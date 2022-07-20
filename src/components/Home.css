@@ -1,0 +1,28 @@
+.home-container {
+    grid-row: 2 / 12;
+    grid-column: 1 / 5;
+    border: 1px solid lightblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: rgb(9, 9, 75);
+    animation: sample 6s forwards infinite;
+}
+
+@keyframes sample {
+    50% {
+        background-color: black;
+    }
+}
+
+.home-buttons-container {
+    grid-row: 5 / 11;
+    grid-column: 1 / 5;
+    border: 1px solid green;
+}
+
+.home-button {
+    background-color: lightblue;
+    width: 100%;
+    height: 60px;
+}
