@@ -1,28 +1,64 @@
 .home-container {
     grid-row: 2 / 12;
     grid-column: 1 / 5;
-    border: 1px solid lightblue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    background-color: rgb(9, 9, 75);
-    animation: sample 6s forwards infinite;
+    background-color: var(--raisin-black);
+    /* animation: sample 6s forwards infinite; */
 }
-
-@keyframes sample {
+.intro-container {
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.intro-container > h1 {
+    color: var(--cultured);
+    font-size: 3rem;
+}
+.intro-container > h2 {
+    color: var(--azure)
+}
+.intro-container > p {
+    color: var(--manatee);
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* @keyframes sample {
     50% {
-        background-color: black;
+        background-color: var(--bdazzled-blue);
     }
-}
+} */
 
 .home-buttons-container {
-    grid-row: 5 / 11;
+    grid-row: 7 / 11;
     grid-column: 1 / 5;
-    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-button {
-    background-color: lightblue;
     width: 100%;
-    height: 60px;
+    height: 25%;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background-color: var(--raisin-black);
+    color: var(--cultured);
+}
+.home-button:hover, .home-button:focus {
+    background-color: black;
+    outline: none;
+}
+
+.home-button > p {
+    font-style: italic;
+    color: var(--manatee);
 }

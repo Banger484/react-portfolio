@@ -2,6 +2,7 @@
     --azure: #2b80ff;
     --celtic-blue: #266dd3;
     --bdazzled-blue: #2d5794;
+    --raisin-black: #181c25;
     --charcoal: #344055;
     --black-coral: #576172;
     --slate-gray: #747c8b;
@@ -15,6 +16,6 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--raisin-black);
     color: lightblue;
 }

@@ -8,7 +8,9 @@ function App() {
   const me = {
     firstName: 'Bret',
     lastName: 'Banger',
-    title: 'Web Developer'
+    title: 'Web Developer',
+    area: 'Front End Developer',
+    proficient: 'React JS / JavaScript'
   }
 
   return (
