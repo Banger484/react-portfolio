@@ -1,15 +1,11 @@
 import React from 'react'
 import './Home.css'
 import HomeButton from './HomeButton'
+import { Link } from 'react-router-dom'
 
 export default function Home(props) {
 
-  const categories = [
-    { title: 'About', description: 'Learn a little bit about me!' },
-    { title: 'Skills', description: 'Check out my technical skils!' },
-    { title: 'Projects', description: "Take a look at the things I've built" },
-    { title: 'Contact', description: 'Want to get in touch?' }
-  ]
+  
 
   return (
     <div className='home-container'>
@@ -20,8 +16,8 @@ export default function Home(props) {
       <p>// {props.me.proficient} //</p>
       </div>
       <div className='home-buttons-container'>
-        {categories.map(category => {
-          return <HomeButton title={category.title} description={category.description} />
+        {props.categories.map(category => {
+          return <Link key={category.title} to={`/${props.categories.route}`} ><HomeButton key={category.title} title={category.title} description={category.description} /></Link>
         })}
       </div>
     </div>
