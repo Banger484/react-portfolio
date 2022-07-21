@@ -1,3 +1,14 @@
+:root {
+    --azure: #2b80ff;
+    --celtic-blue: #266dd3;
+    --bdazzled-blue: #2d5794;
+    --charcoal: #344055;
+    --black-coral: #576172;
+    --slate-gray: #747c8b;
+    --manatee: #969da9;
+    --cultured: #f5f5f5;
+}
+
 *, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
