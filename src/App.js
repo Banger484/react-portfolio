@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
 import { useState, useEffect } from "react";
+import {Routes, Route} from 'react-router-dom'
 
 import "./App.css";
 function App() {
@@ -10,6 +11,8 @@ function App() {
   function handleNav() {
     setNavOpen(!navOpen);
   }
+  
+
   const categories = [
     { title: 'About', description: 'Learn a little bit about me', route: 'about' },
     { title: 'Skills', description: 'Check out my technical skills', route: 'skills'  },
@@ -29,7 +32,14 @@ function App() {
   return (
     <div className="app-container">
       <Header navOpen={navOpen} handleNav={handleNav} />
-      {navOpen === true ? <SideMenu categories={categories}/> : (<></>)}
+      {navOpen === true ? <SideMenu categories={categories}/> : (
+        <Routes>
+          <Route
+            path='/'
+            element={<Home me={me} categories={categories}/>}
+          />
+        </Routes>
+      )}
       
     </div>
   );

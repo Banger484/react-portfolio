@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function HomeButton(props) {
+export default function NavButton(props) {
     return (
-        <button className='home-button'>
+        <button className='nav-button'>
             <h2>{props.title}</h2>
             <p>// {props.description} //</p>
         </button>

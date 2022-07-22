@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import HomeButton from './HomeButton'
+import NavButton from './NavButton'
 import { Link } from 'react-router-dom'
 
 export default function Home(props) {
@@ -17,7 +17,7 @@ export default function Home(props) {
       </div>
       <div className='home-buttons-container'>
         {props.categories.map(category => {
-          return <Link key={category.title} to={`/${props.categories.route}`} ><HomeButton key={category.title} title={category.title} description={category.description} /></Link>
+          return <Link key={category.title} to={`/${props.categories.route}`} ><NavButton key={category.title} title={category.title} description={category.description} /></Link>
         })}
       </div>
     </div>

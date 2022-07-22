@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.home-button {
+.nav-button {
     width: 100%;
     height: 20%;
     border: 1px solid white;
@@ -45,12 +45,12 @@
     background-color: var(--raisin-black);
     color: var(--cultured);
 }
-.home-button:hover, .home-button:focus {
+.nav-button:hover, .nav-button:focus {
     background-color: black;
     outline: none;
 }
 
-.home-button > p {
+.nav-button > p {
     font-style: italic;
     color: var(--manatee);
 }

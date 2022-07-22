@@ -1,21 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SideMenu.css";
-import HomeButton from "./HomeButton";
+import NavButton from "./NavButton";
 
 export default function SideMenu({ categories }) {
   return (
     <div className="side-menu">
-      <div className="home-buttons-container">
+      <div className="menu-buttons-container">
         <Link to={'/'}>
-          <HomeButton
+          <NavButton
+            key={'Home'}
             title={"Home"}
             description={"Back to where it all started"}
           />
         </Link>
         {categories.map((category) => {
           return (
-            <HomeButton
+            <NavButton
+              key={category.title}
               title={category.title}
               description={category.description}
             />
