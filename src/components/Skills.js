@@ -9,7 +9,7 @@ export default function Skills() {
         <div className='skills-container'>
             <div className='skill-content'>
                 <h1>Technical Skills</h1>
-                <p>Over this last year I have had the pleasure to work with many different languages, libraries, and frameworks. After graduating from my Full-Stack Bootcamp, I know that my passion lies with JavaScript and ReactJS.</p>
+                <p>Over this last year I have had the pleasure of working with many different languages, libraries, and frameworks. After graduating from my Full-Stack Bootcamp, I know that my passion lies with JavaScript and ReactJS in Front-End Development.</p>
                 <h2 className='skill-list'>My Favorites</h2>
                 <ul>
                     {skills.map(skill => {

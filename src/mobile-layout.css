@@ -170,10 +170,11 @@ body {
 }
 .skill-list {
     color: var(--azure);
+    margin-bottom: 10px;
 }
 .skill-content > ul {
-    /* list-style-type: none; */
     margin-bottom: 20px;
+
 }
 .skill-list-item {
     font-size: 1.3rem;
