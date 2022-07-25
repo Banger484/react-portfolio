@@ -17,7 +17,7 @@ export default function Home(props) {
       </div>
       <div className='home-buttons-container'>
         {props.categories.map(category => {
-          return <Link key={category.title} to={`/${props.categories.route}`} ><NavButton key={category.title} title={category.title} description={category.description} /></Link>
+          return <NavButton key={category.title} title={category.title} description={category.description} route={category.route}/>
         })}
       </div>
     </div>
