@@ -1,7 +1,5 @@
 import React from 'react'
-import './Home.css'
 import NavButton from './NavButton'
-import { Link } from 'react-router-dom'
 
 export default function Home(props) {
 

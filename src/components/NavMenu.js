@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SideMenu.css";
 import NavButton from "./NavButton";
 
-export default function SideMenu({ categories }) {
+export default function NavMenu({ setNavOpen, categories }) {
   return (
-    <div className="side-menu">
-      <div className="menu-buttons-container">
-        <Link to={'/'} className='home-links'>
+    <div className="nav-menu">
+      <div>
           <NavButton
+            route={''}
             key={'Home'}
             title={"Home"}
             description={"Back to where it all started"}
+            setNavOpen={setNavOpen}
           />
-        </Link>
         {categories.map((category) => {
           return (
             <NavButton
@@ -21,6 +20,7 @@ export default function SideMenu({ categories }) {
               title={category.title}
               description={category.description}
               route={category.route}
+              setNavOpen={setNavOpen}
             />
           );
         })}

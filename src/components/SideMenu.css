@@ -1,8 +1,0 @@
-.side-menu {
-    grid-column: 1 / 5;
-    grid-row: 2 / 13;
-    background-color: var(--raisin-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

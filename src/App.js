@@ -1,10 +1,11 @@
 import Home from "./components/Home";
 import Header from "./components/Header";
-import SideMenu from "./components/SideMenu";
-import { useState, useEffect } from "react";
+import NavMenu from "./components/NavMenu";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import { useState } from "react";
 import {Routes, Route} from 'react-router-dom'
 
-import "./App.css";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -32,11 +33,19 @@ function App() {
   return (
     <div className="app-container">
       <Header navOpen={navOpen} handleNav={handleNav} />
-      {navOpen === true ? <SideMenu categories={categories}/> : (
+      {navOpen === true ? <NavMenu setNavOpen={setNavOpen} categories={categories}/> : (
         <Routes>
           <Route
             path='/'
             element={<Home me={me} categories={categories}/>}
+          />
+          <Route
+            path='/about'
+            element={<About />}
+          />
+          <Route
+            path='/skills'
+            element={<Skills />}
           />
         </Routes>
       )}
