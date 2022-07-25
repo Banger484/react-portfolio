@@ -2,6 +2,9 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import NavMenu from "./components/NavMenu";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { useState } from "react";
 import {Routes, Route} from 'react-router-dom'
@@ -28,6 +31,8 @@ function App() {
     title: "Web Developer",
     area: "Front End Developer",
     proficient: "React JS / JavaScript",
+    email: "Banger484@gmail.com",
+    github: "https://github.com/Banger484"
   };
 
   return (
@@ -46,6 +51,18 @@ function App() {
           <Route
             path='/skills'
             element={<Skills />}
+          />
+          <Route
+            path='/resume'
+            element={<Resume />}
+          />
+          <Route
+            path='/projects'
+            element={<Projects />}
+          />
+          <Route
+            path='/contact'
+            element={<Contact me={me} />}
           />
         </Routes>
       )}
