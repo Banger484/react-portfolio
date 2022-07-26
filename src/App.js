@@ -41,7 +41,7 @@ function App() {
       {navOpen === true ? <NavMenu setNavOpen={setNavOpen} categories={categories}/> : (
         <Routes>
           <Route
-            path='/'
+            path='react-portfolio/'
             element={<Home me={me} categories={categories}/>}
           />
           <Route
