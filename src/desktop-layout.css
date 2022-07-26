@@ -1,7 +1,12 @@
 /* Adjust this to be higher than a tablet width */
 
 @media only screen and (min-width: 1024px) {
-
+:root {
+    --h1-special: 3.5rem;
+    --h1-lg: 3rem;
+    --h2-special:
+    --h2-lg: 2rem
+}
 /* Removing Mobile Layout */
 .app-container {
     display: none;
@@ -14,25 +19,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
-
-/* .section1 {
-    background-color: red;
-}
-.section2 {
-    background-color: blue;
-}
-.section3 {
-    background-color: yellow;
-}
-.section4 {
-    background-color: green;
-}
-.section5 {
-    background-color: black;
-}
-.section6 {
-    background-color: white;
-} */
 .p1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -84,17 +70,17 @@
 }
 .home-container > h1 {
     color: var(--cultured);
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .home-container > h2 {
     color: var(--azure);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .home-container > p {
     color: var(--manatee);
     font-weight: bolder;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /* About */
@@ -105,16 +91,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15%;
+    align-items: center;
+    padding: 20px;
 }
 .about-container > h1 {
     color: var(--cultured);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .about-container > p {
     font-weight: bolder;
     color: var(--manatee);
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 /* Skills */
@@ -122,11 +109,23 @@
 .skills-container {
     height: 100%;
     width: 100%;
-    padding: 0 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.skill-content > h1 {
+    color: var(--cultured);
+    font-size: 1.5rem;
+}
+.skill-content > p {
+    color: var(--manatee);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: .9rem;
+}
+.skill-content > h2 {
+    font-size: 1rem;
 }
 
 
@@ -161,12 +160,20 @@
 .project-container {
     height: 100%;
     width: 100%;
-    padding: 0 15%;
 }
 .info-card {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.info-card-left {
+    padding: 0 20px;
+}
+.info-card-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 

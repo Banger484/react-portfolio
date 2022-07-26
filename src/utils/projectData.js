@@ -3,7 +3,7 @@ export const projects = [
         title: 'Inventory+',
         subtitle: 'Inventory Management System',
         details: 'Users can create an account for themselves and their business. They can add their own products or utilize any existing product they want from the database to build a custom order guide. Users can then place orders and track the inventory until it is sold and shipped out. There are also reports and graphs for detailed information about each product.',
-        techTitle: 'MERN Stack Application - ',
+        techTitle: 'MERN Stack Application',
         techList: ['Mongo DB', 'Express JS', 'React JS', 'Node JS', 'Apollo - GraphQL'],
         img: 'InventoryPlus',
         liveLink: 'https://inventoryplus.herokuapp.com/',

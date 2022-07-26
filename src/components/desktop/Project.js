@@ -11,21 +11,29 @@ export default function Project(props) {
   return (
     <div className='project-container'>
       <div className='info-card'>
-        <h1 className="project-title">{props.project.title}</h1>
-        <h3 className="project-subtitle">{props.project.subtitle}</h3>
-        <p className="project-details">{props.project.details}</p>
-        <h3 className="project-tech-title">{props.project.techTitle}</h3>
-        <ul className="project-tech-list">
-          {techListArray.map((tech) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
-        <a href={`${props.project.liveLink}`}>Link to Live Project</a>
-        <a href={`${props.project.repoLink}`}>Link to GitHub Repository</a>
+        <div className="info-card-left">
+          <h1 className="project-title">{props.project.title}</h1>
+          <h3 className="project-subtitle">{props.project.subtitle}</h3>
+          <p className="project-details">{props.project.details}</p>
+
+        </div>
+        <div className="info-card-right">
+          <h3 className="project-tech-title">{props.project.techTitle}</h3>
+          <ul className="project-tech-list">
+            {techListArray.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="info-card-image">
+          {/* <img className="project-image" src={`/images/screenshots/${props.project.img}.png`} alt="project screenshot" /> */}
+        </div>
+        <div className="info-card-links">
+          <a href={`${props.project.liveLink}`}>Link to Live Project</a>
+          <a href={`${props.project.repoLink}`}>Link to GitHub Repository</a>
+        </div>
       </div>
-      <div className="image-container">
-      <img className="project-image" src={`/images/screenshots/${props.project.img}.png`} alt="project screenshot" />
-      </div>
+
 
     </div>
   );
