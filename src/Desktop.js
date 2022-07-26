@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { me, categories } from './utils/personalData'
 
 import Home from './components/desktop/Home'
+import About from './components/desktop/About'
+import Skills from './components/desktop/Skills'
+import Projects from './components/desktop/Projects'
 
 export default function Desktop() {
 
@@ -46,9 +49,15 @@ export default function Desktop() {
       <div className={`window section1 ${positions[componentPositions.home]}`}>
         <Home me={me} />
       </div>
-      <div className={`window section2 ${positions[componentPositions.about]}`}></div>
-      <div className={`window section3 ${positions[componentPositions.skills]}`}></div>
-      <div className={`window section4 ${positions[componentPositions.projects]}`}></div>
+      <div className={`window section2 ${positions[componentPositions.about]}`}>
+        <About />
+      </div>
+      <div className={`window section3 ${positions[componentPositions.skills]}`}>
+        <Skills />
+      </div>
+      <div className={`window section4 ${positions[componentPositions.projects]}`}>
+        <Projects />
+      </div>
       <div className={`window section5 ${positions[componentPositions.contact]}`}></div>
       <div className={`window section6 ${positions[componentPositions.resume]}`}></div>
       <button onClick={slideLeft} className='left-button'>Left</button>

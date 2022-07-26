@@ -1,7 +1,5 @@
-import { useState } from "react";
 
 export default function Resume() {
-  const [page, setPage] = useState(1);
 
   return (
     <div className="resume-container">
