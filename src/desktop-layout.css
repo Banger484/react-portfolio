@@ -1,0 +1,19 @@
+/* Adjust this to be higher than a tablet width */
+
+@media only screen and (min-width: 1024px) {
+
+/* Removing Mobile Layout */
+.app-container {
+    display: none;
+}
+.desktop-container {
+    background-color: var(--raisin-black);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+}

@@ -1,5 +1,5 @@
 import Project from "./Project";
-import { projects } from '../utils/projectData'
+import { projects } from '../../utils/projectData'
 import { useState } from 'react'    
 
 
